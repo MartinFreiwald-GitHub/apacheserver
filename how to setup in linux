@@ -1,0 +1,12 @@
+sudo su
+yum -y install httpd mod_ssl                                              # This installs apache with encryption
+
+systemctl enable httpd                                                    # This enables the apache service
+
+systemctl start httpd                                                     # This starts the apache server
+
+
+
+
+
+sudo sed -i 's/^/#/g' /etc/httpd/conf.d/welcome.conf  
